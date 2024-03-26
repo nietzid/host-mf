@@ -1,15 +1,15 @@
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /app
 
-COPY package.json .
+COPY package*.json ./
 
-RUN npm install
+RUN npm install -g bun
+
+RUN bun install
 
 COPY . .
 
-RUN npm run build
+EXPOSE 5173
 
-EXPOSE 8080
-
-CMD [ "npm", "run", "preview" ]
+CMD ["bun", "run", "serve"]
