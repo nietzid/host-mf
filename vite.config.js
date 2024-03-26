@@ -10,7 +10,7 @@ export default defineConfig({
       name: "app",
       remotes: {
         remoteApp: "http://localhost:5001/assets/remoteEntry.js",
-        ideaApp: "http://railapi.live/idearail/assets/remoteEntry.js",
+        ideaApp: "https://railapi.live/idearail/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
