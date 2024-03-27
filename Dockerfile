@@ -16,4 +16,4 @@ RUN npm install serve -g
 
 CMD ["bun", "run", "build"]
 
-CMD ["bun", "run", "dev"]
+CMD ["bun", "run", "dev", "--", "--host"]
