@@ -11,5 +11,5 @@ RUN bun install
 COPY . .
 
 EXPOSE 5173
-
+CMD ["bun", "run", "build"]
 CMD ["bun", "run", "serve"]
