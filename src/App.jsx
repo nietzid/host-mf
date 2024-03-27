@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 // import Button from "remoteApp/Button";
-import App from "ideaApp/App"
+import {App} from "ideaApp/App"
 // import useStore from "remoteApp/store";
 
 function Apps() {
