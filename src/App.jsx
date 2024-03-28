@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { lazy, useState } from "react";
 import "./App.css";
+const App = lazy(() => import('ideaApp/App'))
 
 // import Button from "remoteApp/Button";
-import {App} from "ideaApp/App"
+// import {App} from "ideaApp/App"
 // import useStore from "remoteApp/store";
 
 function Apps() {
